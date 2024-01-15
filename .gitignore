@@ -1,5 +1,6 @@
 node_modules
 .next
+.swc
 /test-results/
 /playwright-report/
 /blob-report/
