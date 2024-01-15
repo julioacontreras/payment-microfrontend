@@ -10,6 +10,7 @@ npm i # install dependencies
 npm run dev # run application
 
 npm run test:e2e # run integration tests
+npm run test:unit # run unit tests
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
