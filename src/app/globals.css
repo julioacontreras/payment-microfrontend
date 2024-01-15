@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.h-sm {
+    height: 1rem;
+}	
+
+.h-md {
+    height: 1.5rem;
+}	
+
+.h-lg {
+    height: 3rem;
+}	
