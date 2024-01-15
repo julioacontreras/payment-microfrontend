@@ -9,6 +9,7 @@ First, run the development server:
 npm i # install dependencies
 npm run dev # run application
 
+npm run test:e2e # run integration tests
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
