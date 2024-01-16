@@ -2,6 +2,8 @@ Demo micro frontend using React and DDD
 
 ## Getting Started
 
+Do you need rename the file `.env.local.example` to `.env.local` and set the value `X_DEVICE_ID`
+
 First, run the development server:
 
 ```bash
