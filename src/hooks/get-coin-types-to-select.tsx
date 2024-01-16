@@ -1,32 +1,26 @@
 import { Option } from '../ui/components/input-select'
 
-export function getCoinTypesToSelect(): Promise<Option[]> {
-    return new Promise (resolve => {
-        setTimeout(() => {
-            const options: Option[] = [
-                {
-                  title: 'Bitcoin',
-                  value: '1',
-                  url: '/bitcoin.svg'
-                },
-                {
-                  title: 'Etherium',
-                  value: '2',
-                  url: '/etherium.svg'
-                },
-                {
-                  title: 'Polygon',
-                  value: '3',
-                  url: '/polygon.svg'
-                },
-                {
-                  title: 'Ripple',
-                  value: '4',
-                  url: '/ripple.svg'
-                }
-              ]
-            
-            resolve(options)
-        }, 1000)
-    })
+type CointType = {
+  blockchain: string
+  image: string
+  max_amount: string
+  min_amount: string
+  name: string
+  symbol: string  
+}
+
+const URL_CURRENCIES = 'https://payments.pre-bnvo.com/api/v1/currencies'
+const X_DEVICE_ID = '2a758770-36ec-4f64-ac70-ae3b17397ebd' 
+
+export async function getCoinTypesToSelect(): Promise<Option[]> {
+  const response = await fetch(URL_CURRENCIES, { headers: {'X-Device-Id': X_DEVICE_ID} })
+  const data = await response.json()
+  const options: Option[] = data.map((item: CointType) => {
+    return {
+      title: item.name,
+      value: item.symbol,
+      url: item.image        
+    }
+  })
+  return options
 }

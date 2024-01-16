@@ -1,0 +1,4 @@
+GET https://payments.pre-bnvo.com/api/v1/currencies
+content-type: application/json
+X-Device-Id: 2a758770-36ec-4f64-ac70-ae3b17397ebd
+
