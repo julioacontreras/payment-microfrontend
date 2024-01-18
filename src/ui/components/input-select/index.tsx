@@ -48,7 +48,7 @@ export function InputSelect(props: Props) {
         { itemSelected.title }
       </div>
       <div className="w-6">
-      <Image src='/arrow.svg' alt="arrow" className="w-3 h-3" width={16} height={16} priority />        
+      <Image src='./arrow.svg' alt="arrow" className="w-3 h-3" width={16} height={16} priority />        
       </div>
     </button>
       {

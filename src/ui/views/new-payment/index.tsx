@@ -29,7 +29,7 @@ export default function NewPayment(props: Props) {
       coinTypes: props.coinTypes
     }
     const paramsUrl = new URLSearchParams(JSON.stringify(params))
-    router.push(`/details/${paramsUrl}`);
+    router.push(`/details?params=${paramsUrl}`);
   }
 
   const checkValidation = () => {

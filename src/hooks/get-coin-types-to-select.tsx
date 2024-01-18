@@ -7,22 +7,22 @@ export function getCoinTypesToSelect(): Promise<Option[]> {
                 {
                   title: 'Bitcoin',
                   value: '1',
-                  url: '/bitcoin.svg'
+                  url: './bitcoin.svg'
                 },
                 {
                   title: 'Etherium',
                   value: '2',
-                  url: '/etherium.svg'
+                  url: './etherium.svg'
                 },
                 {
                   title: 'Polygon',
                   value: '3',
-                  url: '/polygon.svg'
+                  url: './polygon.svg'
                 },
                 {
                   title: 'Ripple',
                   value: '4',
-                  url: '/ripple.svg'
+                  url: './ripple.svg'
                 }
               ]
             
