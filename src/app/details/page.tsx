@@ -1,4 +1,5 @@
-import { useState } from 'react'
+'use client'
+
 import { useSearchParams } from 'next/navigation'
 import DetailsPayment from '@/ui/views/details-payment'
 import { Option } from '@/ui/components/input-select'
